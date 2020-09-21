@@ -1,0 +1,157 @@
+$main-color: #569C87;
+$main-color-text: #FDCB46;
+@mixin model-menu($background){
+	
+	width: 60%;
+	overflow: hidden;
+	
+	
+	div{
+		background-color: $background;
+		transition: all 1s;
+		width: 100%;
+		height: 100%;
+		max-height: 500px;
+		&:hover
+		{transform: scale(1.2);	
+		opacity: 0.5;	
+		}
+	}
+}
+
+.contact
+
+
+body{
+width: 100%;
+margin: auto;
+}
+header h1{
+background-color: $main-color;
+text-align: center;
+color: $main-color-text;
+margin: auto;
+line-height: 2;
+margin-bottom: 5%;
+font-weight: bold;
+font-size: 4em;
+}
+
+.menu{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+text-align: center;
+grid-gap: 30px;
+grid-auto-rows: 500px;
+margin-left: 12%;
+margin-bottom: 5%;
+
+	&__1 {
+		@include model-menu(#FCDFDA); 
+	}
+	&__2{
+		@include model-menu(#F9F9F9);	
+	}
+	&__3{
+		@include model-menu(#FDFFFD);
+	}
+	&__4{
+		@include model-menu(#FDFFFD);
+	}	
+}
+
+.prochainement{
+border-radius: 5px;
+background-color: $main-color;
+text-align: center;
+color: #FDCB46;
+width: fit-content;
+margin: auto;
+line-height: 1.5;
+font-size: 1.8em;
+display: flex;
+align-items: center;
+padding: 0px 20px 0px 20px;
+margin-bottom: 150px;
+
+h2{
+margin-right: 15px;
+
+}
+}
+@keyframes dots{
+	from{
+		transform: translateY(-5px);
+	}
+	to{
+		transform: translateY(0px);
+	}
+
+}
+
+.point-anim {
+	width: 50px;
+	display: flex;
+	justify-content: space-around;
+	span{
+		background-color: black;
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+	}
+span:nth-child(1){
+	animation: dots 0.6s infinite;
+	}
+span:nth-child(2){
+	animation: dots 0.6s infinite;
+	animation-delay: 0.2s;
+	}
+span:nth-child(3){
+	animation: dots 0.6s infinite;
+	animation-delay: 0.4s;
+}
+}
+
+footer
+{
+justify-content: space-around;
+background-color: $main-color;
+display: flex;
+margin-top: 5%;
+font-size: 1.3em;
+position: fixed;
+bottom:0;
+left:0;
+height:100px;
+width: 100%;
+align-items: center;
+}
+
+.contact{
+	margin-left: 50%;
+	&:hover {
+		animation: wiggle 0.7s infinite;
+	}
+
+}	
+
+@keyframes wiggle{
+	from{
+		transform: translateX(-5px);
+	}
+	to{
+		transform: translateX(5px);
+   }
+
+}
+.mention:hover{
+	animation: wiggle 0.7s infinite;
+}
+
+
+footer h3{
+color: $main-color-text;
+}
+a:link{
+text-decoration: none;
+}
