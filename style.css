@@ -1,4 +1,16 @@
-.contact body {
+@font-face {
+  font-family: "policemenu1";
+  src: url("england.ttf");
+}
+@font-face {
+  font-family: "policemenu3-4";
+  src: url("AlexBrush-Regular.ttf");
+}
+@font-face {
+  font-family: "policemenu2";
+  src: url("Rubik-Regular.ttf");
+}
+body {
   width: 100%;
   margin: auto;
 }
@@ -16,16 +28,18 @@ header h1 {
 
 .menu {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 360px);
   text-align: center;
-  grid-gap: 30px;
+  grid-gap: 100px;
   grid-auto-rows: 500px;
-  margin-left: 12%;
+  justify-content: center;
   margin-bottom: 5%;
+  font-size: 35px;
 }
 .menu__1 {
-  width: 60%;
+  width: 100%;
   overflow: hidden;
+  box-shadow: 0px 0px 10px 10px rgba(100, 0, 0, 0.2);
 }
 .menu__1 div {
   background-color: #FCDFDA;
@@ -33,44 +47,59 @@ header h1 {
   width: 100%;
   height: 100%;
   max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .menu__1 div:hover {
   transform: scale(1.2);
   opacity: 0.5;
 }
 .menu__2 {
-  width: 60%;
+  width: 100%;
   overflow: hidden;
+  box-shadow: 0px 0px 10px 10px rgba(100, 0, 0, 0.2);
 }
 .menu__2 div {
-  background-color: #F9F9F9;
+  background-color: #FFEDFC;
   transition: all 1s;
   width: 100%;
   height: 100%;
   max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .menu__2 div:hover {
   transform: scale(1.2);
   opacity: 0.5;
 }
 .menu__3 {
-  width: 60%;
+  width: 100%;
   overflow: hidden;
+  box-shadow: 0px 0px 10px 10px rgba(100, 0, 0, 0.2);
 }
 .menu__3 div {
-  background-color: #FDFFFD;
+  background-color: #F9F9F9;
   transition: all 1s;
   width: 100%;
   height: 100%;
   max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .menu__3 div:hover {
   transform: scale(1.2);
   opacity: 0.5;
 }
 .menu__4 {
-  width: 60%;
+  width: 100%;
   overflow: hidden;
+  box-shadow: 0px 0px 10px 10px rgba(100, 0, 0, 0.2);
 }
 .menu__4 div {
   background-color: #FDFFFD;
@@ -78,10 +107,73 @@ header h1 {
   width: 100%;
   height: 100%;
   max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .menu__4 div:hover {
   transform: scale(1.2);
   opacity: 0.5;
+}
+
+.menu__1 {
+  font-family: "policemenu1";
+}
+.menu__1 a {
+  color: black;
+}
+.menu__1 .degrademenu {
+  background: -webkit-linear-gradient(bottom left, black, grey);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.note {
+  background: -webkit-linear-gradient(bottom left, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.menu__2 {
+  font-family: "policemenu2";
+  color: red;
+  font-size: 25px;
+}
+.menu__2 a {
+  color: orange;
+}
+.menu__2 .degrademenu {
+  background: -webkit-linear-gradient(bottom left, orange, #7218E3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu__3 {
+  font-family: "policemenu3-4";
+  color: blue;
+}
+.menu__3 a {
+  color: blue;
+}
+.menu__3 .degrademenu {
+  background: -webkit-linear-gradient(bottom left, blue, #2FB8FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu__4 {
+  font-family: "policemenu3-4";
+  color: green;
+}
+.menu__4 a {
+  color: green;
+}
+.menu__4 .degrademenu {
+  background: -webkit-linear-gradient(bottom left, green, #8BFE75);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .prochainement {
@@ -116,7 +208,7 @@ header h1 {
   justify-content: space-around;
 }
 .point-anim span {
-  background-color: black;
+  background-color: #FDCB46;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -170,8 +262,226 @@ footer h3 {
   color: #FDCB46;
 }
 
-a:link {
+a {
   text-decoration: none;
+}
+
+/* media queries*/
+@media screen and (max-width: 767px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    text-align: center;
+    grid-gap: 100px;
+    grid-auto-rows: 500px;
+    justify-content: center;
+    margin-bottom: 5%;
+    font-size: 35px;
+  }
+  .menu__1 {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 10px rgba(100, 0, 0, 0.2);
+  }
+  .menu__1 div {
+    background-color: #FCDFDA;
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu__1 div:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  .menu__2 {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 10px rgba(100, 0, 0, 0.2);
+  }
+  .menu__2 div {
+    background-color: #FFEDFC;
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu__2 div:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  .menu__3 {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 10px rgba(100, 0, 0, 0.2);
+  }
+  .menu__3 div {
+    background-color: #F9F9F9;
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu__3 div:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  .menu__4 {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 10px rgba(100, 0, 0, 0.2);
+  }
+  .menu__4 div {
+    background-color: #FDFFFD;
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu__4 div:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+
+  .prochainement {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: initial;
+  }
+
+  .contact {
+    margin-left: -10%;
+  }
+
+  .mention {
+    margin-left: -5%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    text-align: center;
+    grid-gap: 100px;
+    grid-auto-rows: 500px;
+    justify-content: center;
+    margin-bottom: 5%;
+    font-size: 35px;
+  }
+  .menu__1 {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 10px rgba(100, 0, 0, 0.2);
+  }
+  .menu__1 div {
+    background-color: #FCDFDA;
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu__1 div:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  .menu__2 {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 10px rgba(100, 0, 0, 0.2);
+  }
+  .menu__2 div {
+    background-color: #FFEDFC;
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu__2 div:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  .menu__3 {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 10px rgba(100, 0, 0, 0.2);
+  }
+  .menu__3 div {
+    background-color: #F9F9F9;
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu__3 div:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  .menu__4 {
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 10px rgba(100, 0, 0, 0.2);
+  }
+  .menu__4 div {
+    background-color: #FDFFFD;
+    transition: all 1s;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu__4 div:hover {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+
+  .prochainement {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: initial;
+  }
+
+  .contact {
+    margin-left: -10%;
+  }
+
+  .mention {
+    margin-left: -5%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

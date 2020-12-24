@@ -1,0 +1,567 @@
+$main-color: #569C87;
+$main-color-text: #FDCB46;
+@font-face
+{
+	font-family: 'policemenu1';
+	src: url('england.ttf');
+}
+
+@font-face
+{
+	font-family: 'policemenu3-4';
+	src: url('AlexBrush-Regular.ttf');
+}
+
+@font-face
+{
+	font-family: 'policemenu2';
+	src: url('Rubik-Regular.ttf');
+}
+
+body
+{
+	width: 100%;
+	margin: auto;
+}
+
+header h1
+{
+	background-color: $main-color;
+	text-align: center;
+	color: $main-color-text;
+	margin: auto;
+	line-height: 2;
+	margin-bottom: 5%;
+	font-weight: bold;
+	font-size: 4em;
+}
+
+
+footer
+{
+	justify-content: space-around;
+	background-color: $main-color;
+	display: flex;
+	margin-top: 5%;
+	font-size: 1.3em;
+	position: fixed;
+	bottom:0;
+	left:0;
+	height: 100px;
+	width: 100%;
+	align-items: center;
+}
+
+.contact
+{
+	margin-left: 50%;
+	&:hover
+	{
+		animation: wiggle 0.7s infinite;
+	}
+}
+
+@keyframes wiggle
+{
+	from
+	{
+		transform: translateX(-5px);
+	}
+
+	to
+	{
+		transform: translateX(5px);
+	}
+}
+
+.mention:hover
+{
+	animation: wiggle 0.7s infinite;
+}
+
+footer h3
+{
+	color: $main-color-text;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+
+
+
+/* la note enchantée*/
+.menusection
+{
+	width: 70%;
+	margin: auto;
+	background-color: #FCDFDA;
+	padding: 5% 10% 5% 10%;
+	box-sizing: border-box;
+
+	.note2{
+		margin-left: calc(50% - 35px);
+    	background: -webkit-linear-gradient(bottom left, red, orange);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: transparent;
+		font-size: 70px;
+    	
+	}
+	ul
+	{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	li
+	{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&::before, &::after
+		{
+			width: 35%;
+			height: 5px;
+			background-color: black;
+			content: "";
+			display: block;
+		}
+	}
+
+	h2
+	{
+		text-align: center;
+		font-family: 'policemenu1';
+		font-size: 50px;
+	}
+
+	h3
+	{
+		text-align: center;
+		&:after{
+			width: 0px;
+			height: 2px;
+			background-color: black;
+			content: "";
+			display: block;
+			transition: width 1s;
+				}
+		&:hover:after{
+			width: 100%;
+					}
+
+				}
+}
+
+.nomresto
+{
+	text-align: center;
+	font-size: 50px;
+}
+
+.menubordure
+{
+	margin-bottom: 10%;
+}
+
+.note3{
+	display: flex;
+	align-items: center;
+	margin-left: -100%;
+    justify-content: space-around;
+}
+/* Le chic à la française*/
+.menusection2
+{
+	width: 70%;
+	margin: auto;
+	background-color: #FFEDFC;
+	padding: 5% 10% 5% 10%;
+	box-sizing: border-box;
+	ul
+	{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	li
+	{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&::before, &::after
+		{
+			width: 30%;
+			height: 5px;
+			content: "";
+			display: block;
+		}
+	}
+	.couleurchic1::before, .couleurchic1::after{
+			background-color: orange;
+	}
+	.couleurchic2::before, .couleurchic2::after{
+			background-color: violet;
+	}
+	.couleurchic3::before, .couleurchic3::after{
+			background-color: blue;
+	}
+
+
+
+	h2
+	{
+		text-align: center;
+		color: red;
+		font-family: 'policemenu2';
+		font-size: 25px;
+	}
+
+	.degrademenu2
+	{
+		background: -webkit-linear-gradient(bottom left, orange, #7218E3);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	h3
+	{
+		text-align: center;
+	}
+	.h31{ 
+		&:after{
+			width: 0px;
+			height: 2px;
+			background-color: orange;
+			content: "";
+			display: block;
+			transition: width 1s;
+				}
+		&:hover:after{
+			width: 100%;
+					}
+
+	}
+	.h32{
+			text-align: center;
+		&:after{
+			width: 0px;
+			height: 2px;
+			background-color: violet;
+			content: "";
+			display: block;
+			transition: width 1s;
+				}
+		&:hover:after{
+			width: 100%;
+					}
+
+				}
+	}
+	.h33{
+		text-align: center;
+		&:after{
+			width: 0px;
+			height: 2px;
+			background-color: blue;
+			content: "";
+			display: block;
+			transition: width 1s;
+				}
+		&:hover:after{
+			width: 100%;
+					}
+}
+
+.nomresto
+{
+	text-align: center;
+	font-size: 50px;
+}
+
+.menubordure
+{
+	margin-bottom: 10%;
+}
+
+.couleurchic1
+{
+	color: orange;
+}
+
+.couleurchic2
+{
+	color: violet;
+}
+
+.couleurchic3
+{
+	color: blue;
+}
+
+/* Le délice des papilles*/
+.menusection3
+{
+	width: 70%;
+	margin: auto;
+	background-color: #F9F9F9;
+	padding: 5% 10% 5% 10%;
+	box-sizing: border-box;
+	ul
+	{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	li
+	{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&::before, &::after
+		{
+			width: 35%;
+			height: 5px;
+			background-color: blue;
+			content: "";
+			display: block;
+		}
+	}
+
+	h2
+	{
+		font-family: 'policemenu3-4';
+		color: blue;
+		text-align: center;
+		background: -webkit-linear-gradient(bottom left, blue, #2FB8FF);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 80px;
+		margin-top: 0%;
+	}
+
+	h3
+	{
+		text-align: center;
+		&:after{
+			width: 0px;
+			height: 2px;
+			background-color: blue;
+			content: "";
+			display: block;
+			transition: width 1s;
+				}
+		&:hover:after{
+			width: 100%;
+					}
+
+				}
+}
+
+.nomresto
+{
+	text-align: center;
+	font-size: 50px;
+}
+
+.menubordure
+{
+	margin-bottom: 10%;
+}
+
+/* La palette du goût*/
+.menusection4
+{
+	width: 70%;
+	margin: auto;
+	background-color: #FDFFFD;
+	padding: 5% 10% 5% 10%;
+	box-sizing: border-box;
+	ul
+	{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	li
+	{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	header
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&::before, &::after
+		{
+			width: 35%;
+			height: 5px;
+			background-color: green;
+			content: "";
+			display: block;
+		}
+	}
+
+	h2
+	{
+		text-align: center;
+		font-family: 'policemenu3-4';
+		color: blue;
+		text-align: center;
+		background: -webkit-linear-gradient(bottom left, green, #8BFE75);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 80px;
+		margin-top: 0%;
+	}
+
+	h3
+	{
+		text-align: center;
+		&:after{
+			width: 0px;
+			height: 2px;
+			background-color: green;
+			content: "";
+			display: block;
+			transition: width 1s;
+				}
+		&:hover:after{
+			width: 100%;
+					}
+
+				}
+}
+
+.nomresto
+{
+	text-align: center;
+	font-size: 50px;
+}
+
+.menubordure
+{
+	margin-bottom: 10%;
+}
+
+/* media quaries*/
+
+
+@media screen and (max-width: 767px){
+	
+	.prochainement{
+		font-size: 1em;
+	}
+	footer{
+		font-size: initial;
+	}
+	.contact{
+		margin-left: -10%;
+	}
+	.mention{
+		    margin-left: -5%;
+	}
+	.nomresto{
+		text-align: center;
+		font-size: 35px;
+	}
+	.menusection{
+	width: 95%;
+	padding: 5% 0% 5% 0%;
+	}
+	.menusection2{
+	width: 95%;
+	padding: 5% 0% 5% 0%;
+	}
+	.menusection3{
+	width: 95%;
+	padding: 5% 0% 5% 0%;
+	}
+	.menusection4{
+	width: 95%;
+	padding: 5% 0% 5% 0%;
+	}
+	.note3{
+		visibility: hidden;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	
+	.prochainement{
+		font-size: 1em;
+	}
+	footer{
+		font-size: initial;
+	}
+	.contact{
+		margin-left: -10%;
+	}
+	.mention{
+		    margin-left: -5%;
+	}
+	.nomresto{
+		text-align: center;
+		font-size: 35px;
+	}
+	.menusection{
+	width: 95%;
+	padding: 5% 5% 5% 5%;
+	}
+	.menusection2{
+	width: 95%;
+	padding: 5% 5% 5% 5%;
+	}
+	.menusection3{
+	width: 95%;
+	padding: 5% 5% 5% 5%;
+	}
+	.menusection4{
+	width: 95%;
+	padding: 5% 5% 5% 5%;
+	}
+
+}
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px)
+{
+
+
+
+}
+
+
+@media screen and (min-width: 1440px)
+{
+
+}
+
+@media screen and (min-width: 2560px)
+
+{
+
+}

@@ -1,0 +1,470 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "policemenu1";
+  src: url("england.ttf");
+}
+@font-face {
+  font-family: "policemenu3-4";
+  src: url("AlexBrush-Regular.ttf");
+}
+@font-face {
+  font-family: "policemenu2";
+  src: url("Rubik-Regular.ttf");
+}
+body {
+  width: 100%;
+  margin: auto;
+}
+
+header h1 {
+  background-color: #569C87;
+  text-align: center;
+  color: #FDCB46;
+  margin: auto;
+  line-height: 2;
+  margin-bottom: 5%;
+  font-weight: bold;
+  font-size: 4em;
+}
+
+footer {
+  justify-content: space-around;
+  background-color: #569C87;
+  display: flex;
+  margin-top: 5%;
+  font-size: 1.3em;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+}
+
+.contact {
+  margin-left: 50%;
+}
+.contact:hover {
+  animation: wiggle 0.7s infinite;
+}
+
+@keyframes wiggle {
+  from {
+    transform: translateX(-5px);
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+.mention:hover {
+  animation: wiggle 0.7s infinite;
+}
+
+footer h3 {
+  color: #FDCB46;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* la note enchantée*/
+.menusection {
+  width: 70%;
+  margin: auto;
+  background-color: #FCDFDA;
+  padding: 5% 10% 5% 10%;
+  box-sizing: border-box;
+}
+.menusection .note2 {
+  margin-left: calc(50% - 35px);
+  background: -webkit-linear-gradient(bottom left, red, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-size: 70px;
+}
+.menusection ul {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.menusection li {
+  display: flex;
+  justify-content: space-between;
+}
+.menusection header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menusection header::before, .menusection header::after {
+  width: 35%;
+  height: 5px;
+  background-color: black;
+  content: "";
+  display: block;
+}
+.menusection h2 {
+  text-align: center;
+  font-family: "policemenu1";
+  font-size: 50px;
+}
+.menusection h3 {
+  text-align: center;
+}
+.menusection h3:after {
+  width: 0px;
+  height: 2px;
+  background-color: black;
+  content: "";
+  display: block;
+  transition: width 1s;
+}
+.menusection h3:hover:after {
+  width: 100%;
+}
+
+.nomresto {
+  text-align: center;
+  font-size: 50px;
+}
+
+.menubordure {
+  margin-bottom: 10%;
+}
+
+.note3 {
+  display: flex;
+  align-items: center;
+  margin-left: -100%;
+  justify-content: space-around;
+}
+
+/* Le chic à la française*/
+.menusection2 {
+  width: 70%;
+  margin: auto;
+  background-color: #FFEDFC;
+  padding: 5% 10% 5% 10%;
+  box-sizing: border-box;
+}
+.menusection2 ul {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.menusection2 li {
+  display: flex;
+  justify-content: space-between;
+}
+.menusection2 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menusection2 header::before, .menusection2 header::after {
+  width: 30%;
+  height: 5px;
+  content: "";
+  display: block;
+}
+.menusection2 .couleurchic1::before, .menusection2 .couleurchic1::after {
+  background-color: orange;
+}
+.menusection2 .couleurchic2::before, .menusection2 .couleurchic2::after {
+  background-color: violet;
+}
+.menusection2 .couleurchic3::before, .menusection2 .couleurchic3::after {
+  background-color: blue;
+}
+.menusection2 h2 {
+  text-align: center;
+  color: red;
+  font-family: "policemenu2";
+  font-size: 25px;
+}
+.menusection2 .degrademenu2 {
+  background: -webkit-linear-gradient(bottom left, orange, #7218E3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menusection2 h3 {
+  text-align: center;
+}
+.menusection2 .h31:after {
+  width: 0px;
+  height: 2px;
+  background-color: orange;
+  content: "";
+  display: block;
+  transition: width 1s;
+}
+.menusection2 .h31:hover:after {
+  width: 100%;
+}
+.menusection2 .h32 {
+  text-align: center;
+}
+.menusection2 .h32:after {
+  width: 0px;
+  height: 2px;
+  background-color: violet;
+  content: "";
+  display: block;
+  transition: width 1s;
+}
+.menusection2 .h32:hover:after {
+  width: 100%;
+}
+
+.h33 {
+  text-align: center;
+}
+.h33:after {
+  width: 0px;
+  height: 2px;
+  background-color: blue;
+  content: "";
+  display: block;
+  transition: width 1s;
+}
+.h33:hover:after {
+  width: 100%;
+}
+
+.nomresto {
+  text-align: center;
+  font-size: 50px;
+}
+
+.menubordure {
+  margin-bottom: 10%;
+}
+
+.couleurchic1 {
+  color: orange;
+}
+
+.couleurchic2 {
+  color: violet;
+}
+
+.couleurchic3 {
+  color: blue;
+}
+
+/* Le délice des papilles*/
+.menusection3 {
+  width: 70%;
+  margin: auto;
+  background-color: #F9F9F9;
+  padding: 5% 10% 5% 10%;
+  box-sizing: border-box;
+}
+.menusection3 ul {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.menusection3 li {
+  display: flex;
+  justify-content: space-between;
+}
+.menusection3 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menusection3 header::before, .menusection3 header::after {
+  width: 35%;
+  height: 5px;
+  background-color: blue;
+  content: "";
+  display: block;
+}
+.menusection3 h2 {
+  font-family: "policemenu3-4";
+  color: blue;
+  text-align: center;
+  background: -webkit-linear-gradient(bottom left, blue, #2FB8FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  margin-top: 0%;
+}
+.menusection3 h3 {
+  text-align: center;
+}
+.menusection3 h3:after {
+  width: 0px;
+  height: 2px;
+  background-color: blue;
+  content: "";
+  display: block;
+  transition: width 1s;
+}
+.menusection3 h3:hover:after {
+  width: 100%;
+}
+
+.nomresto {
+  text-align: center;
+  font-size: 50px;
+}
+
+.menubordure {
+  margin-bottom: 10%;
+}
+
+/* La palette du goût*/
+.menusection4 {
+  width: 70%;
+  margin: auto;
+  background-color: #FDFFFD;
+  padding: 5% 10% 5% 10%;
+  box-sizing: border-box;
+}
+.menusection4 ul {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.menusection4 li {
+  display: flex;
+  justify-content: space-between;
+}
+.menusection4 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menusection4 header::before, .menusection4 header::after {
+  width: 35%;
+  height: 5px;
+  background-color: green;
+  content: "";
+  display: block;
+}
+.menusection4 h2 {
+  text-align: center;
+  font-family: "policemenu3-4";
+  color: blue;
+  text-align: center;
+  background: -webkit-linear-gradient(bottom left, green, #8BFE75);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 80px;
+  margin-top: 0%;
+}
+.menusection4 h3 {
+  text-align: center;
+}
+.menusection4 h3:after {
+  width: 0px;
+  height: 2px;
+  background-color: green;
+  content: "";
+  display: block;
+  transition: width 1s;
+}
+.menusection4 h3:hover:after {
+  width: 100%;
+}
+
+.nomresto {
+  text-align: center;
+  font-size: 50px;
+}
+
+.menubordure {
+  margin-bottom: 10%;
+}
+
+/* media quaries*/
+@media screen and (max-width: 767px) {
+  .prochainement {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: initial;
+  }
+
+  .contact {
+    margin-left: -10%;
+  }
+
+  .mention {
+    margin-left: -5%;
+  }
+
+  .nomresto {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .menusection {
+    width: 95%;
+    padding: 5% 0% 5% 0%;
+  }
+
+  .menusection2 {
+    width: 95%;
+    padding: 5% 0% 5% 0%;
+  }
+
+  .menusection3 {
+    width: 95%;
+    padding: 5% 0% 5% 0%;
+  }
+
+  .menusection4 {
+    width: 95%;
+    padding: 5% 0% 5% 0%;
+  }
+
+  .note3 {
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .prochainement {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: initial;
+  }
+
+  .contact {
+    margin-left: -10%;
+  }
+
+  .mention {
+    margin-left: -5%;
+  }
+
+  .nomresto {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .menusection {
+    width: 95%;
+    padding: 5% 5% 5% 5%;
+  }
+
+  .menusection2 {
+    width: 95%;
+    padding: 5% 5% 5% 5%;
+  }
+
+  .menusection3 {
+    width: 95%;
+    padding: 5% 5% 5% 5%;
+  }
+
+  .menusection4 {
+    width: 95%;
+    padding: 5% 5% 5% 5%;
+  }
+}
+
+/*# sourceMappingURL=menu.css.map */

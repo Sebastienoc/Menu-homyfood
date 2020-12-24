@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch scss/main.scss:style.css"
+    "sass": "sass --watch scss/main.scss:style.css",
+     "menu": "sass --watch scss/menu.scss:menu.css",
+     "all": "npm run sass & npm run menu"
   },
+
   "author": "",
   "license": "ISC"
 }
