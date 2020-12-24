@@ -1,3 +1,4 @@
+
 $main-color: #569C87;
 $main-color-text: #FDCB46;
 @font-face
@@ -35,7 +36,6 @@ header h1
 	font-weight: bold;
 	font-size: 4em;
 }
-
 
 footer
 {
@@ -89,9 +89,6 @@ a
 	text-decoration: none;
 }
 
-
-
-
 /* la note enchantée*/
 .menusection
 {
@@ -100,16 +97,16 @@ a
 	background-color: #FCDFDA;
 	padding: 5% 10% 5% 10%;
 	box-sizing: border-box;
-
-	.note2{
+	.note2
+	{
 		margin-left: calc(50% - 35px);
-    	background: -webkit-linear-gradient(bottom left, red, orange);
+		background: -webkit-linear-gradient(bottom left, red, orange);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		color: transparent;
 		font-size: 70px;
-    	
 	}
+
 	ul
 	{
 		padding-left: 10%;
@@ -147,19 +144,21 @@ a
 	h3
 	{
 		text-align: center;
-		&:after{
+		&:after
+		{
 			width: 0px;
 			height: 2px;
 			background-color: black;
 			content: "";
 			display: block;
 			transition: width 1s;
-				}
-		&:hover:after{
-			width: 100%;
-					}
+		}
 
-				}
+		&:hover:after
+		{
+			width: 100%;
+		}
+	}
 }
 
 .nomresto
@@ -173,12 +172,14 @@ a
 	margin-bottom: 10%;
 }
 
-.note3{
+.note3
+{
 	display: flex;
 	align-items: center;
 	margin-left: -100%;
-    justify-content: space-around;
+	justify-content: space-around;
 }
+
 /* Le chic à la française*/
 .menusection2
 {
@@ -212,17 +213,21 @@ a
 			display: block;
 		}
 	}
-	.couleurchic1::before, .couleurchic1::after{
-			background-color: orange;
-	}
-	.couleurchic2::before, .couleurchic2::after{
-			background-color: violet;
-	}
-	.couleurchic3::before, .couleurchic3::after{
-			background-color: blue;
+
+	.couleurchic1::before, .couleurchic1::after
+	{
+		background-color: orange;
 	}
 
+	.couleurchic2::before, .couleurchic2::after
+	{
+		background-color: violet;
+	}
 
+	.couleurchic3::before, .couleurchic3::after
+	{
+		background-color: blue;
+	}
 
 	h2
 	{
@@ -238,53 +243,67 @@ a
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
+
 	h3
 	{
 		text-align: center;
 	}
-	.h31{ 
-		&:after{
+
+	.h31
+	{
+		&:after
+		{
 			width: 0px;
 			height: 2px;
 			background-color: orange;
 			content: "";
 			display: block;
 			transition: width 1s;
-				}
-		&:hover:after{
-			width: 100%;
-					}
+		}
 
+		&:hover:after
+		{
+			width: 100%;
+		}
 	}
-	.h32{
-			text-align: center;
-		&:after{
+
+	.h32
+	{
+		text-align: center;
+		&:after
+		{
 			width: 0px;
 			height: 2px;
 			background-color: violet;
 			content: "";
 			display: block;
 			transition: width 1s;
-				}
-		&:hover:after{
-			width: 100%;
-					}
+		}
 
-				}
-	}
-	.h33{
-		text-align: center;
-		&:after{
-			width: 0px;
-			height: 2px;
-			background-color: blue;
-			content: "";
-			display: block;
-			transition: width 1s;
-				}
-		&:hover:after{
+		&:hover:after
+		{
 			width: 100%;
-					}
+		}
+	}
+}
+
+.h33
+{
+	text-align: center;
+	&:after
+	{
+		width: 0px;
+		height: 2px;
+		background-color: blue;
+		content: "";
+		display: block;
+		transition: width 1s;
+	}
+
+	&:hover:after
+	{
+		width: 100%;
+	}
 }
 
 .nomresto
@@ -363,19 +382,21 @@ a
 	h3
 	{
 		text-align: center;
-		&:after{
+		&:after
+		{
 			width: 0px;
 			height: 2px;
 			background-color: blue;
 			content: "";
 			display: block;
 			transition: width 1s;
-				}
-		&:hover:after{
-			width: 100%;
-					}
+		}
 
-				}
+		&:hover:after
+		{
+			width: 100%;
+		}
+	}
 }
 
 .nomresto
@@ -440,19 +461,21 @@ a
 	h3
 	{
 		text-align: center;
-		&:after{
+		&:after
+		{
 			width: 0px;
 			height: 2px;
 			background-color: green;
 			content: "";
 			display: block;
 			transition: width 1s;
-				}
-		&:hover:after{
-			width: 100%;
-					}
+		}
 
-				}
+		&:hover:after
+		{
+			width: 100%;
+		}
+	}
 }
 
 .nomresto
@@ -467,101 +490,125 @@ a
 }
 
 /* media quaries*/
-
-
-@media screen and (max-width: 767px){
-	
-	.prochainement{
+@media screen and (max-width: 767px)
+{
+	.prochainement
+	{
 		font-size: 1em;
 	}
-	footer{
+
+	footer
+	{
 		font-size: initial;
 	}
-	.contact{
+
+	.contact
+	{
 		margin-left: -10%;
 	}
-	.mention{
-		    margin-left: -5%;
+
+	.mention
+	{
+		margin-left: -5%;
 	}
-	.nomresto{
+
+	.nomresto
+	{
 		text-align: center;
 		font-size: 35px;
 	}
-	.menusection{
-	width: 95%;
-	padding: 5% 0% 5% 0%;
+
+	.menusection
+	{
+		width: 95%;
+		padding: 5% 0% 5% 0%;
 	}
-	.menusection2{
-	width: 95%;
-	padding: 5% 0% 5% 0%;
+
+	.menusection2
+	{
+		width: 95%;
+		padding: 5% 0% 5% 0%;
 	}
-	.menusection3{
-	width: 95%;
-	padding: 5% 0% 5% 0%;
+
+	.menusection3
+	{
+		width: 95%;
+		padding: 5% 0% 5% 0%;
 	}
-	.menusection4{
-	width: 95%;
-	padding: 5% 0% 5% 0%;
+
+	.menusection4
+	{
+		width: 95%;
+		padding: 5% 0% 5% 0%;
 	}
-	.note3{
+
+	.note3
+	{
 		visibility: hidden;
 	}
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px){
-	
-	.prochainement{
+@media screen and (min-width: 768px) and (max-width: 1023px)
+{
+	.prochainement
+	{
 		font-size: 1em;
 	}
-	footer{
+
+	footer
+	{
 		font-size: initial;
 	}
-	.contact{
+
+	.contact
+	{
 		margin-left: -10%;
 	}
-	.mention{
-		    margin-left: -5%;
+
+	.mention
+	{
+		margin-left: -5%;
 	}
-	.nomresto{
+
+	.nomresto
+	{
 		text-align: center;
 		font-size: 35px;
 	}
-	.menusection{
-	width: 95%;
-	padding: 5% 5% 5% 5%;
-	}
-	.menusection2{
-	width: 95%;
-	padding: 5% 5% 5% 5%;
-	}
-	.menusection3{
-	width: 95%;
-	padding: 5% 5% 5% 5%;
-	}
-	.menusection4{
-	width: 95%;
-	padding: 5% 5% 5% 5%;
+
+	.menusection
+	{
+		width: 95%;
+		padding: 5% 5% 5% 5%;
 	}
 
+	.menusection2
+	{
+		width: 95%;
+		padding: 5% 5% 5% 5%;
+	}
+
+	.menusection3
+	{
+		width: 95%;
+		padding: 5% 5% 5% 5%;
+	}
+
+	.menusection4
+	{
+		width: 95%;
+		padding: 5% 5% 5% 5%;
+	}
 }
-
-
 
 @media screen and (min-width: 1024px) and (max-width: 1439px)
 {
-
-
-
 }
-
 
 @media screen and (min-width: 1440px)
 {
-
 }
 
 @media screen and (min-width: 2560px)
-
 {
-
 }
