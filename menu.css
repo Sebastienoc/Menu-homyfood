@@ -11,6 +11,10 @@
   font-family: "policemenu2";
   src: url("Rubik-Regular.ttf");
 }
+@font-face {
+  font-family: "logo";
+  src: url("Shrikhand-Regular.ttf");
+}
 body {
   width: 100%;
   margin: auto;
@@ -23,8 +27,9 @@ header h1 {
   margin: auto;
   line-height: 2;
   margin-bottom: 5%;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 4em;
+  font-family: "logo";
 }
 
 footer {
@@ -167,6 +172,15 @@ a {
   content: "";
   display: block;
 }
+.menusection2 .p1color {
+  color: orange;
+}
+.menusection2 .p2color {
+  color: violet;
+}
+.menusection2 .p3color {
+  color: blue;
+}
 .menusection2 .couleurchic1::before, .menusection2 .couleurchic1::after {
   background-color: orange;
 }
@@ -183,7 +197,7 @@ a {
   font-size: 25px;
 }
 .menusection2 .degrademenu2 {
-  background: -webkit-linear-gradient(bottom left, orange, #7218E3);
+  background: -webkit-linear-gradient(bottom left, orange 20%, #7218E3 70%, #6042AE 10%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -259,6 +273,20 @@ a {
   background-color: #F9F9F9;
   padding: 5% 10% 5% 10%;
   box-sizing: border-box;
+}
+.menusection3 .couleurdelice2::before, .menusection3 .couleurdelice2::after {
+  background-color: #4A88CF;
+}
+.menusection3 .couleurdelice3::before, .menusection3 .couleurdelice3::after {
+  background-color: #9BC7FA;
+}
+.menusection3 p {
+  font-family: "policemenu3-4";
+  font-size: 110%;
+}
+.menusection3 h3 {
+  font-family: "policemenu3-4";
+  font-size: 120%;
 }
 .menusection3 ul {
   padding-left: 10%;

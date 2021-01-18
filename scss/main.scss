@@ -30,7 +30,11 @@ $main-color-text: #FDCB46;
 	font-family: 'policemenu1';
 	src: url('england.ttf');
 }
-
+@font-face
+{
+	font-family: 'logo';
+	src: url('Shrikhand-Regular.ttf');
+}
 @font-face
 {
 	font-family: 'policemenu3-4';
@@ -57,8 +61,9 @@ header h1
 	margin: auto;
 	line-height: 2;
 	margin-bottom: 5%;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 4em;
+	font-family: 'logo';
 }
 
 .menu
@@ -128,7 +133,7 @@ header h1
 
 	.degrademenu
 	{
-		background: -webkit-linear-gradient(bottom left, orange, #7218E3);
+		background: -webkit-linear-gradient(bottom left, orange 5%, #7218E3 100%, #6042AE 60%);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
