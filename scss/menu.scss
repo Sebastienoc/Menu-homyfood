@@ -39,7 +39,7 @@ header h1
 	margin-bottom: 5%;
 	font-weight: normal;
 	font-size: 4em;
-	font-family: 'logo';
+	font-family: 'arial black';
 }
 
 footer
@@ -364,6 +364,7 @@ a
 	p{
 		font-family: 'policemenu3-4';
 		font-size: 110%;
+		font-weight: bold;
 	}
 	h3{
 		font-family: 'policemenu3-4';
@@ -458,7 +459,15 @@ a
 		display: flex;
 		justify-content: space-between;
 	}
-
+	p{
+		font-family: 'policemenu3-4';
+		font-size: 110%;
+		font-weight: bold;
+	}
+	h3{
+		font-family: 'policemenu3-4';
+		font-size: 120%;
+	}
 	header
 	{
 		display: flex;
@@ -471,6 +480,7 @@ a
 			background-color: green;
 			content: "";
 			display: block;
+			background: -webkit-linear-gradient(bottom left, green, #8BFE75);
 		}
 	}
 
