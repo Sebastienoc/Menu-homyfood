@@ -5,15 +5,19 @@
 }
 @font-face {
   font-family: "policemenu3-4";
-  src: url("AlexBrush-Regular.ttf");
+  src: url("Caveat-Regular.ttf");
 }
 @font-face {
   font-family: "policemenu2";
-  src: url("Rubik-Regular.ttf");
+  src: url("Roboto-Light.ttf");
 }
 @font-face {
   font-family: "palette";
   src: url("Courgette-Regular.ttf");
+}
+@font-face {
+  font-family: "index";
+  src: url("Roboto-Light.ttf");
 }
 body {
   width: 100%;
@@ -44,6 +48,7 @@ footer {
   height: 100px;
   width: 100%;
   align-items: center;
+  font-family: "index";
 }
 
 .contact {
@@ -282,8 +287,7 @@ a {
 }
 .menusection3 p {
   font-family: "policemenu3-4";
-  font-size: 110%;
-  font-weight: bold;
+  font-size: 130%;
 }
 .menusection3 h3 {
   font-family: "policemenu3-4";

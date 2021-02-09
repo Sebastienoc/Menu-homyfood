@@ -9,18 +9,23 @@ $main-color-text: #FDCB46;
 @font-face
 {
 	font-family: 'policemenu3-4';
-	src: url('AlexBrush-Regular.ttf');
+	src: url('Caveat-Regular.ttf');
 }
 
 @font-face
 {
 	font-family: 'policemenu2';
-	src: url('Rubik-Regular.ttf');
+	src: url('Roboto-Light.ttf');
 }
 @font-face
 {
 	font-family: 'palette';
 	src: url('Courgette-Regular.ttf');
+}
+@font-face
+{
+	font-family: 'index';
+	src: url('Roboto-Light.ttf');
 }
 
 body
@@ -55,6 +60,8 @@ footer
 	height: 100px;
 	width: 100%;
 	align-items: center;
+	font-family: 'index',
+
 }
 
 .contact
@@ -87,6 +94,7 @@ footer
 footer h3
 {
 	color: $main-color-text;
+
 }
 
 a
@@ -363,8 +371,7 @@ a
 	}
 	p{
 		font-family: 'policemenu3-4';
-		font-size: 110%;
-		font-weight: bold;
+		font-size: 130%;
 	}
 	h3{
 		font-family: 'policemenu3-4';
