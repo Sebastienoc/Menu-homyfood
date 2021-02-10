@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "policemenu1";
-  src: url("england.ttf");
+  src: url("Courgette-Regular.ttf");
 }
 @font-face {
   font-family: "policemenu3-4";
@@ -94,6 +94,10 @@ a {
   color: transparent;
   font-size: 70px;
 }
+.menusection p {
+  font-family: "policemenu3-4";
+  font-size: x-large;
+}
 .menusection ul {
   padding-left: 10%;
   padding-right: 10%;
@@ -118,8 +122,10 @@ a {
   text-align: center;
   font-family: "policemenu1";
   font-size: 50px;
+  margin-left: -5%;
 }
 .menusection h3 {
+  font-family: "policemenu1";
   text-align: center;
 }
 .menusection h3:after {
@@ -147,7 +153,7 @@ a {
   display: flex;
   align-items: center;
   margin-left: -100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 /* Le chic à la française*/
@@ -178,22 +184,22 @@ a {
   display: block;
 }
 .menusection2 .p1color {
-  color: orange;
+  color: #B5622F;
 }
 .menusection2 .p2color {
-  color: violet;
+  color: #7B548C;
 }
 .menusection2 .p3color {
-  color: blue;
+  color: #5D08C4;
 }
 .menusection2 .couleurchic1::before, .menusection2 .couleurchic1::after {
-  background-color: orange;
+  background-color: #B5622F;
 }
 .menusection2 .couleurchic2::before, .menusection2 .couleurchic2::after {
-  background-color: violet;
+  background-color: #7B548C;
 }
 .menusection2 .couleurchic3::before, .menusection2 .couleurchic3::after {
-  background-color: blue;
+  background-color: #5D08C4;
 }
 .menusection2 h2 {
   text-align: center;
@@ -212,7 +218,7 @@ a {
 .menusection2 .h31:after {
   width: 0px;
   height: 2px;
-  background-color: orange;
+  background-color: #B5622F;
   content: "";
   display: block;
   transition: width 1s;
@@ -226,7 +232,7 @@ a {
 .menusection2 .h32:after {
   width: 0px;
   height: 2px;
-  background-color: violet;
+  background-color: #7B548C;
   content: "";
   display: block;
   transition: width 1s;
@@ -241,7 +247,7 @@ a {
 .h33:after {
   width: 0px;
   height: 2px;
-  background-color: blue;
+  background-color: #5D08C4;
   content: "";
   display: block;
   transition: width 1s;
@@ -264,11 +270,11 @@ a {
 }
 
 .couleurchic2 {
-  color: violet;
+  color: #7B548C;
 }
 
 .couleurchic3 {
-  color: blue;
+  color: #5D08C4;
 }
 
 /* Le délice des papilles*/

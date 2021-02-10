@@ -3,7 +3,7 @@ $main-color-text: #FDCB46;
 @font-face
 {
 	font-family: 'policemenu1';
-	src: url('england.ttf');
+	src: url('Courgette-Regular.ttf');
 }
 
 @font-face
@@ -119,7 +119,10 @@ a
 		color: transparent;
 		font-size: 70px;
 	}
-
+	p{
+		font-family: 'policemenu3-4';
+		font-size: x-large;
+	}
 	ul
 	{
 		padding-left: 10%;
@@ -146,16 +149,18 @@ a
 			display: block;
 		}
 	}
-
+	
 	h2
 	{
 		text-align: center;
 		font-family: 'policemenu1';
 		font-size: 50px;
+		margin-left: -5%;
 	}
 
 	h3
 	{
+		font-family: 'policemenu1';
 		text-align: center;
 		&:after
 		{
@@ -190,7 +195,7 @@ a
 	display: flex;
 	align-items: center;
 	margin-left: -100%;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 /* Le chic à la française*/
@@ -227,27 +232,27 @@ a
 		}
 	}
 .p1color{
-	color: orange;
+	color: #B5622F;
 }
 .p2color{
-	color: violet;
+	color: #7B548C;
 }
 .p3color{
-	color: blue;
+	color: #5D08C4;
 }
 	.couleurchic1::before, .couleurchic1::after
 	{
-		background-color: orange;
+		background-color: #B5622F;
 	}
 
 	.couleurchic2::before, .couleurchic2::after
 	{
-		background-color: violet;
+		background-color: #7B548C;
 	}
 
 	.couleurchic3::before, .couleurchic3::after
 	{
-		background-color: blue;
+		background-color: #5D08C4;
 	}
 	h2
 	{
@@ -275,7 +280,7 @@ a
 		{
 			width: 0px;
 			height: 2px;
-			background-color: orange;
+			background-color: #B5622F;
 			content: "";
 			display: block;
 			transition: width 1s;
@@ -294,7 +299,7 @@ a
 		{
 			width: 0px;
 			height: 2px;
-			background-color: violet;
+			background-color: #7B548C;
 			content: "";
 			display: block;
 			transition: width 1s;
@@ -314,7 +319,7 @@ a
 	{
 		width: 0px;
 		height: 2px;
-		background-color: blue;
+		background-color: #5D08C4;
 		content: "";
 		display: block;
 		transition: width 1s;
@@ -344,12 +349,12 @@ a
 
 .couleurchic2
 {
-	color: violet;
+	color: #7B548C;
 }
 
 .couleurchic3
 {
-	color: blue;
+	color: #5D08C4;
 }
 
 /* Le délice des papilles*/

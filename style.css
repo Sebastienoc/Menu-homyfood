@@ -1,6 +1,6 @@
 @font-face {
   font-family: "policemenu1";
-  src: url("england.ttf");
+  src: url("Courgette-Regular.ttf");
 }
 @font-face {
   font-family: "logo";
@@ -8,7 +8,7 @@
 }
 @font-face {
   font-family: "policemenu3-4";
-  src: url("AlexBrush-Regular.ttf");
+  src: url("DancingScript-Regular.ttf");
 }
 @font-face {
   font-family: "policemenu2";
@@ -17,6 +17,10 @@
 @font-face {
   font-family: "index";
   src: url("Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "palette";
+  src: url("KaushanScript-Regular.ttf");
 }
 body {
   width: 100%;
@@ -173,7 +177,7 @@ header h1 {
 }
 
 .menu__4 {
-  font-family: "policemenu3-4";
+  font-family: "palette";
   color: green;
 }
 .menu__4 a {
