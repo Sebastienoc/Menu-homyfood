@@ -19,6 +19,14 @@
   font-family: "index";
   src: url("Roboto-Light.ttf");
 }
+@font-face {
+  font-family: "chic";
+  src: url("Newsreader_7pt-Regular.ttf");
+}
+@font-face {
+  font-family: "chictitre";
+  src: url("AlexBrush-Regular.ttf");
+}
 body {
   width: 100%;
   margin: auto;
@@ -142,7 +150,8 @@ a {
 
 .nomresto {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
+  font-family: "arial black";
 }
 
 .menubordure {
@@ -171,6 +180,9 @@ a {
 .menusection2 li {
   display: flex;
   justify-content: space-between;
+}
+.menusection2 p {
+  font-family: "chic";
 }
 .menusection2 header {
   display: flex;
@@ -205,12 +217,13 @@ a {
   text-align: center;
   color: red;
   font-family: "policemenu2";
-  font-size: 25px;
+  font-size: 50px;
 }
 .menusection2 .degrademenu2 {
   background: -webkit-linear-gradient(bottom left, orange 20%, #7218E3 70%, #6042AE 10%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: "chictitre";
 }
 .menusection2 h3 {
   text-align: center;
@@ -258,7 +271,8 @@ a {
 
 .nomresto {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
+  font-family: "arial black";
 }
 
 .menubordure {
@@ -266,7 +280,7 @@ a {
 }
 
 .couleurchic1 {
-  color: orange;
+  color: #B5622F;
 }
 
 .couleurchic2 {
@@ -346,7 +360,8 @@ a {
 
 .nomresto {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
+  font-family: "arial black";
 }
 
 .menubordure {
@@ -427,7 +442,8 @@ a {
 
 .nomresto {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
+  font-family: "arial black";
 }
 
 .menubordure {
