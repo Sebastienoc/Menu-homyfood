@@ -166,6 +166,9 @@ header h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.menu__2 p {
+  font-family: "chictitre";
+}
 
 .menu__3 {
   font-family: "policemenu3-4";
