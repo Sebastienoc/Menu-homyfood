@@ -25,7 +25,7 @@
 }
 @font-face {
   font-family: "chictitre";
-  src: url("AlexBrush-Regular.ttf");
+  src: url("CroissantOne-Regular.ttf");
 }
 body {
   width: 100%;
@@ -217,7 +217,7 @@ a {
   text-align: center;
   color: red;
   font-family: "policemenu2";
-  font-size: 50px;
+  font-size: 30px;
 }
 .menusection2 .degrademenu2 {
   background: -webkit-linear-gradient(bottom left, orange 20%, #7218E3 70%, #6042AE 10%);

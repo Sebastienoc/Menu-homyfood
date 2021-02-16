@@ -22,6 +22,10 @@
   font-family: "palette";
   src: url("KaushanScript-Regular.ttf");
 }
+@font-face {
+  font-family: "chictitre";
+  src: url("CroissantOne-Regular.ttf");
+}
 body {
   width: 100%;
   margin: auto;
@@ -150,7 +154,7 @@ header h1 {
 }
 
 .menu__2 {
-  font-family: "policemenu2";
+  font-family: "chictitre";
   color: red;
   font-size: 25px;
 }
